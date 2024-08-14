@@ -1,0 +1,29 @@
+/* "Inter" font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Some Common CSS for Landing page start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    overflow-x: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a,a:hover {
+    text-decoration: none;
+}
+ul,ol,li {
+    list-style: none;
+}
+/* Some Common CSS for Landing page end here */
+
+/* Some shared CSS stert from here */
+.container {
+    
+}
+/* Some shared CSS end here */
