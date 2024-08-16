@@ -6,24 +6,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
-html,body {
+html,
+body {
     overflow-x: hidden;
 }
 img {
     width: 100%;
     height: 100%;
 }
-a,a:hover {
+a,
+a:hover {
     text-decoration: none;
+    /* color: var(--dark-color); */
 }
-ul,ol,li {
+ul,
+ol,
+li {
     list-style: none;
 }
 /* Some Common CSS for Landing page end here */
 
+/* Some roots start here */
+:root{
+    --dark-color: #1a1423;
+    --light-color: #fdfffc;
+    --accent-color: #7161ef;
+}
+/* Some roots end here */
 /* Some shared CSS stert from here */
 .container {
-    
+    width: 1300px;
+    margin: 0 auto;
 }
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    text-transform: capitalize;
+    padding: 8px 32px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 300ms ease;
+    &:hover {
+        background-color: #5947de;
+    }
+}
+
 /* Some shared CSS end here */
+/* Header part CSS start from here */
+
+/* Nav part CSS start from here */
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 5;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+nav .nav-items ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav .nav-items ul li a {
+    font-weight: 500;
+    display: inline-block;
+    transition: all 300ms ease;
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+nav .nav-items .btn-primary:hover {
+    color: var(--light-color);
+}
+/* Nav part CSS end here */
+
+/* Header part CSS end here */
