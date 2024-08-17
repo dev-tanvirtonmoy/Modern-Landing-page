@@ -15,6 +15,7 @@ body {
 img {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 a,
 a:hover {
@@ -37,22 +38,33 @@ li {
 /* Some roots end here */
 /* Some shared CSS stert from here */
 .container {
-    width: 1300px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: auto;
 }
-.btn-primary {
+.btn-primary,
+.btn-secondary {
     background-color: var(--accent-color);
     color: var(--light-color);
     text-transform: capitalize;
+    border: 1px solid var(--accent-color);
     padding: 8px 32px;
     display: inline-block;
     font-weight: 500;
     transition: all 300ms ease;
     &:hover {
         background-color: #5947de;
+        color: var(--light-color);
+        border: none;
     }
 }
-
+.btn-secondary {
+    color: var(--accent-color);
+    background: var(--light-color);
+}
+p {
+    font-size: 1rem;
+    line-height: 160%;
+}
 /* Some shared CSS end here */
 /* Header part CSS start from here */
 
@@ -71,7 +83,7 @@ nav {
     padding: 16px 32px;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
 }
 .logo {
@@ -97,3 +109,55 @@ nav .nav-items .btn-primary:hover {
 /* Nav part CSS end here */
 
 /* Header part CSS end here */
+
+/* Banner part CSS start from here */
+.banner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 70px;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+}
+.banner .banner-content {
+    max-width: 50%;
+}
+.banner .banner-content .banner-title {
+    font-size: 3.75rem;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    background: linear-gradient(90deg, #433798 20%, #1a1423 60%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.banner-btn-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+.banner .banner-img {
+    max-width: 505;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.banner .banner-img img{
+    height: 600px;
+    object-fit: cover;
+}
+.bg-color {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    background: #ad95ff;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(115px);
+}
+/* Banner part CSS end here */
