@@ -83,6 +83,9 @@ p {
     letter-spacing: -1px;
     margin: 8px 0;
 }
+section {
+    padding: 120px 0;
+}
 /* Some shared CSS end here */
 /* Header part CSS start from here */
 
@@ -180,6 +183,10 @@ nav .nav-items .btn-primary:hover {
 }
 /* Banner part CSS end here */
 /* Feature section CSS start from here */
+.featured {
+    z-index: 1;
+    position: relative;
+}
 .featured .featured-container {
     display: flex;
     flex-direction: column;
@@ -201,3 +208,29 @@ nav .nav-items .btn-primary:hover {
     justify-content: center;\
 }
 /* Feature section CSS end here */
+/* About section CSS start from here */
+#about {
+    background: #f5f5f5;
+    margin-top: -60px;
+    padding-top: 120px;
+}
+#about .container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+section .icon {
+    width: 30px;
+}
+.about-con-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+}
+.feature {
+    flex: 1;
+}
+.about-con .btn-secondary{
+    margin-top: 28px;
+}
+/* About section CSS end here */
