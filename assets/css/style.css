@@ -16,6 +16,7 @@ img {
     width: 100%;
     height: 100%;
     display: flex;
+    object-fit: cover;
 }
 a,
 a:hover {
@@ -82,9 +83,10 @@ p {
     line-height: 130%;
     letter-spacing: -1px;
     margin: 8px 0;
+    text-transform: capitalize;
 }
 section {
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 /* Some shared CSS end here */
 /* Header part CSS start from here */
@@ -209,10 +211,11 @@ nav .nav-items .btn-primary:hover {
 }
 /* Feature section CSS end here */
 /* About section CSS start from here */
+
 #about {
     background: #f5f5f5;
     margin-top: -60px;
-    padding-top: 120px;
+    padding: 120px 0;
 }
 #about .container {
     display: flex;
@@ -234,3 +237,30 @@ section .icon {
     margin-top: 28px;
 }
 /* About section CSS end here */
+/* Services section CSS start from here */
+#services{
+    padding: 120px 0;
+}
+.service-head {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+.services-container .content {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease;
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0 3px 80px rgba(0, 0, 0, 0.1);
+        }
+}
+.services-container .inner-con {
+    padding: 16px;
+}
+/* Services section CSS end here */
