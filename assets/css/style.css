@@ -11,6 +11,7 @@
 html,
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 img {
     width: 100%;
@@ -21,7 +22,6 @@ img {
 a,
 a:hover {
     text-decoration: none;
-    /* color: var(--dark-color); */
 }
 ul,
 ol,
@@ -43,7 +43,8 @@ li {
     margin: auto;
 }
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-tertiary {
     background-color: var(--accent-color);
     color: var(--light-color);
     text-transform: capitalize;
@@ -61,6 +62,16 @@ li {
 .btn-secondary {
     color: var(--accent-color);
     background: var(--light-color);
+}
+.btn-tertiary {
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    border: 2px solid var(--light-color);
+        &:hover {
+            background: var(--accent-color);
+            color: var(--light-color);
+            border: 2px solid var(--light-color);
+        }
 }
 p {
     font-size: 1rem;
@@ -264,3 +275,28 @@ section .icon {
     padding: 16px;
 }
 /* Services section CSS end here */
+
+/* why chose us section CSS start from here */
+#why {
+    background-color: var(--accent-color);
+    padding: 120px 0;
+    color: var(--light-color);
+}
+#why .container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+#why h2 {
+    background: var(--light-color);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#why .icon {
+    filter: brightness(0) invert(1);
+}
+#why .btn-tertiary {
+    margin-top: 20px;
+}
+/* why chose us section CSS end here */
