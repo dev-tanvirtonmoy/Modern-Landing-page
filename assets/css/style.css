@@ -49,6 +49,7 @@ li {
     color: var(--light-color);
     text-transform: capitalize;
     border: 2px solid var(--accent-color);
+    cursor: pointer;
     padding: 8px 32px;
     display: inline-block;
     font-weight: 500;
@@ -253,7 +254,7 @@ section .icon {
     padding: 120px 0;
 }
 .service-head {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto 60px;
     text-align: center;
 }
@@ -300,3 +301,74 @@ section .icon {
     margin-top: 20px;
 }
 /* why chose us section CSS end here */
+
+/* Blog section CSS start from here */
+#blog {
+    padding: 120px 0;
+}
+#blog .blog-heading {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+#blog .blogs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+#blog .content {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+#blog .labels {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+#blog .labels span{
+    color: var(--light-color);
+    background: var(--accent-color);
+    padding: 3px 6px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+#blog .btn-secondary {
+    margin-top: 20px;
+}
+/* Blog section CSS end here */
+
+/* Contact us section CSS start from here */
+#contact .contact-heading {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#contact .group {
+    display: flex;
+    gap: 16px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px 24px;
+    text-transform: capitalize;
+}
+form textarea {
+    height: 100px;
+    resize: none;
+}
+form button {
+    font-size: 16px;
+    width: fit-content;
+    margin-top: 0;
+    border: none;
+}
+/* Contact us section CSS end here */
